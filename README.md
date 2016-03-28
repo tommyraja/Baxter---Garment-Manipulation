@@ -3,12 +3,15 @@
 **installing Garment-Manipulation**
 
 $ cd ~/catkin_ws/src
+
 $ git clone https://github.com/tommyraja/Baxter---Garment-Manipulation.git
+
 $ catkin_make
 
 **running the various scenarios**
 
 various scenarios tested (with different position of cloth like folded, bended etc..) 
+
 Get the information about cloth detected from Baxter camera and processing done
 
 change the processing behavior by modifying the cloth position manually.
