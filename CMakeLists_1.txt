@@ -1,0 +1,60 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(tahir_test)
+
+find_package(catkin REQUIRED 
+roscpp 
+roslib 
+cmake_modules 
+
+cv_bridge
+sensor_msgs 
+
+roscpp
+std_msgs
+tf
+
+ image_transport)
+
+find_package(OpenCV REQUIRED)
+find_package(Eigen REQUIRED)
+
+catkin_package(
+  DEPENDS OpenCV
+)
+
+include_directories(include ${catkin_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS})
+
+################## EXECUTABLE FILES ##############################
+
+#add_executable(publisher1 src/publisher1.cpp)
+#add_executable(publisher2 src/publisher2.cpp)
+add_executable(publisher3 src/publisher3.cpp)
+#add_executable(subscriber1 src/subscriber1.cpp)
+#add_executable(subscriber2 src/subscriber2.cpp)
+#add_executable(subscriber3 src/subscriber3.cpp)
+add_executable(subscriber_video src/subscriber_video.cpp)
+#add_executable(test1 src/test1.cpp)
+
+
+
+
+
+#target_link_libraries(publisher1 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+#target_link_libraries(publisher2 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries(publisher3 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries(subscriber_video ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+#target_link_libraries(subscriber1 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+#target_link_libraries(subscriber2 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+#target_link_libraries(subscriber3 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+#target_link_libraries(test1 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
+
+
+
+
+
+
+
+
+################## EXECUTABLE FILES ##############################
