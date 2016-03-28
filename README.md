@@ -16,10 +16,12 @@ change the processing behavior by modifying the cloth position manually.
 **provided nodes**
 
 image_listener: a node which detects the grasping points of cloths by baxter arm
+
             subscribed topics: camera rgb image ("/camera/rgb/image_raw") 
                                camera depth image ("/camera/depth/image_raw")
                                camera info topic ("/camera/rgb/camera_info")
                                control state ("/state_change")
+                               
             published topics: publisher pose - display the global pose for corners detected
                                 (/leftgoal)
                                 (/rightgoal)
