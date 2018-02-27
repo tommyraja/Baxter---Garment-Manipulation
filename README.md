@@ -4,7 +4,7 @@
 
 $ cd ~/catkin_ws/src
 
-$ git clone https://github.com/tommyraja/Baxter---Garment-Manipulation.git
+$ git clone https://github.com/vigneshrajaponnambalam/Baxter---Garment-Manipulation
 
 $ catkin_make
 
